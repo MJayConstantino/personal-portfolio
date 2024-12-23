@@ -6,12 +6,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const AboutMeSection = () => {
   return (
-    <section id="about" className="py-20 bg-muted">
+    <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-foreground">
           About Me
         </h2>
-        <Tabs defaultValue="about" className="w-full max-w-4xl mx-auto">
+        <Tabs defaultValue="about" className="w-full max-w-7xl mx-auto">
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="about">About</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
