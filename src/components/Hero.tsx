@@ -5,28 +5,38 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="bg-background h-screen flex items-center">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-background min-h-screen flex items-center overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/placeholder.svg"
+          alt="Background"
+          layout="fill"
+          objectFit="cover"
+          className="opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
+      </div>
+      <div className="container mx-auto px-4 z-10">
         <div className="flex justify-start space-x-4 mb-8">
           <Link
             href="https://github.com/MJayConstantino"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>
-              <FaGithub size={30} />
+            <Button variant="ghost" size="icon">
+              <FaGithub size={24} />
               <span className="sr-only">GitHub</span>
-            </button>
+            </Button>
           </Link>
           <Link
             href="https://www.linkedin.com/in/michael-constantino-2751b4313/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>
-              <FaLinkedin size={30} />
+            <Button variant="ghost" size="icon">
+              <FaLinkedin size={24} />
               <span className="sr-only">LinkedIn</span>
-            </button>
+            </Button>
           </Link>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
@@ -58,6 +68,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
   );
 };

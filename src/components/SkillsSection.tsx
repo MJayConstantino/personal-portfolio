@@ -45,17 +45,20 @@ const skills = [
 
 const SkillsSection = () => {
   return (
-    <section className="py-20 bg-background">
+    <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center text-foreground">
           Skills & Technologies
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {skills.map((skill) => (
-            <Card key={skill.name}>
-              <CardContent className="flex flex-col items-center justify-center p-4 hover:shadow-md transition-shadow">
-                <skill.icon size={20} />
-                {skill.name}
+            <Card
+              key={skill.name}
+              className="hover:shadow-md transition-shadow"
+            >
+              <CardContent className="flex flex-col items-center justify-center p-4 h-full">
+                <skill.icon className="w-8 h-8 mb-2 text-primary" />
+                <span className="text-sm text-center">{skill.name}</span>
               </CardContent>
             </Card>
           ))}

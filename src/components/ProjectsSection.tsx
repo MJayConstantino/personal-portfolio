@@ -77,7 +77,7 @@ const projects = {
   ],
 };
 
-export default function ProjectsSection() {
+const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -103,4 +103,6 @@ export default function ProjectsSection() {
       </div>
     </section>
   );
-}
+};
+
+export default ProjectsSection;
