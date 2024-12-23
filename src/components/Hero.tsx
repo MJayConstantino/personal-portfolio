@@ -45,7 +45,7 @@ const Hero = () => {
               Bringing Ideas to Life Through Code
             </h1>
             <p className="text-xl mb-8 text-muted-foreground">
-              Hi, I'm Michael Constantino. I am a Software Engineer and I craft
+              Hi, I am Michael Constantino. I am a Software Engineer and I craft
               amazing solutions through elegant web and mobile experiences.
             </p>
             <div className="space-x-4">

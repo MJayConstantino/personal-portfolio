@@ -30,10 +30,10 @@ const AboutMeSection = () => {
                 </div>
                 <div className="flex-1">
                   <p className="text-lg text-muted-foreground">
-                    I'm a software engineering student at Central Philippine
+                    I am a software engineering student at Central Philippine
                     University with a passion for creating intuitive and
                     efficient web applications. My journey in coding began in
-                    Grade 6 with Arduino, and since then, I've expanded my
+                    Grade 6 with Arduino, and since then, I have expanded my
                     skills to include full-stack development. I love turning
                     ideas into reality and continuously learning new
                     technologies.
