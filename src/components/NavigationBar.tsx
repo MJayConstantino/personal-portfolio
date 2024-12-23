@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function NavigationBar() {
   return (
-    <nav className="bg-gray-800 text-white p-4">
+    <nav className="bg-gray-800 text-white p-4 sticky">
       <ul className="flex justify-center space-x-6">
         <li>
           <Link href="/" className="hover:text-gray-300">

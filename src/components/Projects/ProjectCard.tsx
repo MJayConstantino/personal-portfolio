@@ -1,35 +1,46 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
-interface ProjectCardProps {
+interface Project {
+  id: number;
   title: string;
   description: string;
-  imageUrl: string;
-  projectUrl: string;
+  image: string;
+  githubUrl: string;
+  languages: string[];
 }
 
-export default function ProjectCard({
-  title,
-  description,
-  imageUrl,
-  projectUrl,
-}: ProjectCardProps) {
+interface ProjectCardProps {
+  project: Project;
+}
+
+export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
-      <Image
-        src={imageUrl}
-        alt={title}
-        width={400}
-        height={200}
-        className="w-full h-48 object-cover"
-      />
-      <div className="p-4">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 mb-4">{description}</p>
-        <Link href={projectUrl} className="text-blue-500 hover:underline">
-          Learn More
-        </Link>
-      </div>
-    </div>
+    <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+      <Card className="h-full transition-transform hover:scale-105">
+        <Image
+          src={project.image}
+          alt={project.title}
+          width={300}
+          height={200}
+          className="w-full h-48 object-cover rounded-t-lg"
+        />
+        <CardHeader>
+          <CardTitle>{project.title}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground mb-4">{project.description}</p>
+          <div className="flex flex-wrap gap-2">
+            {project.languages.map((lang, index) => (
+              <Badge key={index} variant="secondary">
+                {lang}
+              </Badge>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
+    </Link>
   );
 }

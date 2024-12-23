@@ -18,6 +18,7 @@ module.exports = {
       screens: {
         "2xl": "1400px",
       },
+      height: "100vh",
     },
     extend: {
       colors: {

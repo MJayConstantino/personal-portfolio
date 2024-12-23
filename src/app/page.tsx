@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <Hero />
       <AboutMeSection />
-      <ProjectsSection />
       <ExperienceSection />
+      <ProjectsSection />
     </>
   );
 }
