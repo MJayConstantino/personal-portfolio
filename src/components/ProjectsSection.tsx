@@ -1,5 +1,8 @@
+"use client";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ProjectCard } from "@/components/Projects/ProjectCard";
+import { motion } from "framer-motion";
 
 const projects = {
   webDev: [
@@ -22,7 +25,7 @@ const projects = {
       id: 2,
       title: "Calculator",
       description:
-        "A React-based task organizer with drag-and-drop functionality",
+        "A Vite Project that is a simple calculator with basic operations",
       image: "/placeholder.svg?height=200&width=300",
       githubUrl: "https://github.com/MJayConstantino",
       languages: ["TypeScript", "Vite"],
@@ -92,9 +95,16 @@ const ProjectsSection = () => {
           </TabsList>
           {Object.entries(projects).map(([category, projectList]) => (
             <TabsContent key={category} value={category}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {projectList.map((project) => (
-                  <ProjectCard key={project.id} project={project} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {projectList.map((project, index) => (
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                  >
+                    <ProjectCard key={project.id} project={project} />
+                  </motion.div>
                 ))}
               </div>
             </TabsContent>

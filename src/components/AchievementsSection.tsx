@@ -4,12 +4,12 @@ const achievements = [
   {
     title: "2nd Place in Gamedev Hackathon",
     description:
-      "Won first place in the University Hackathon for developing an innovative health tracking app.",
+      "Won 1st runner up in the Odyssey Festival game development hackathon with a team of 4.",
   },
   {
-    title: "1st Place in Pitching Competition",
+    title: "3rd Place in Engineering IED Competition",
     description:
-      "Co-authored a research paper on 'Efficient Algorithms for Mobile App Development' published in a peer-reviewed journal.",
+      "Made a collaborative project management tool using React Native and won 3rd place in the competition.",
   },
   {
     title: "Dean's List",

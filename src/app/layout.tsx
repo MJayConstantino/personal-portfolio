@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { NavigationBar } from "@/components/NavigationBar";
+import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
@@ -9,7 +10,15 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Your Portfolio",
   description: "A showcase of my work and skills as a web developer",
-  keywords: ["web development", "portfolio", "React", "Next.js", "JavaScript"],
+  keywords: [
+    "web development",
+    "portfolio",
+    "React",
+    "Next.js",
+    "JavaScript",
+    "TypeScript",
+    "Michael Constantino",
+  ],
 };
 
 export default function RootLayout({
@@ -19,16 +28,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <NavigationBar />
-          <main className="flex-grow">{children}</main>
-          <Footer />
+          <div className="min-h-screen flex flex-col">
+            <NavigationBar />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

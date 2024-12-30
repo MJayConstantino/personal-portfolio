@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 const AboutMeSection = () => {
   return (
@@ -17,56 +18,70 @@ const AboutMeSection = () => {
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
           <TabsContent value="about">
-            <Card>
-              <CardContent className="flex flex-col md:flex-row items-center p-6">
-                <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-6">
-                  <Image
-                    src="/placeholder.svg"
-                    alt="Michael Constantino"
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-lg"
-                  />
-                </div>
-                <div className="flex-1">
-                  <p className="text-lg text-muted-foreground">
-                    I am a software engineering student at Central Philippine
-                    University with a passion for creating intuitive and
-                    efficient web applications. My journey in coding began in
-                    Grade 6 with Arduino, and since then, I have expanded my
-                    skills to include full-stack development. I love turning
-                    ideas into reality and continuously learning new
-                    technologies.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <Card>
+                <CardContent className="flex flex-col md:flex-row items-center p-6">
+                  <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-6">
+                    <Image
+                      src="/placeholder.svg"
+                      alt="Michael Constantino"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <p className="text-lg text-muted-foreground">
+                      I am a software engineering student at Central Philippine
+                      University with a passion for creating intuitive and
+                      efficient web applications. My journey in coding began in
+                      Grade 6 with Arduino, and since then, I have expanded my
+                      skills to include full-stack development. I love turning
+                      ideas into reality and continuously learning new
+                      technologies.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           </TabsContent>
           <TabsContent value="education">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4">
-                  Central Philippine University
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Bachelor of Science in Software Engineering
-                </p>
-                <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-                  <li>
-                    Currently in 2nd year, focusing on TypeScript and advanced
-                    project development
-                  </li>
-                  <li>
-                    1st year: Learned Python extensively and developed a game
-                    using C# and Unity
-                  </li>
-                  <li>
-                    Created a collaborative project management tool using React
-                    Native
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold mb-4">
+                    Central Philippine University
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Bachelor of Science in Software Engineering
+                  </p>
+                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
+                    <li>
+                      Currently in 2nd year, focusing on TypeScript and advanced
+                      project development
+                    </li>
+                    <li>
+                      1st year: Learned Python extensively and developed a game
+                      using C# and Unity
+                    </li>
+                    <li>
+                      Created a collaborative project management tool using
+                      React Native
+                    </li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </motion.div>
           </TabsContent>
         </Tabs>
       </div>

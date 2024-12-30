@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent } from "@/components/ui/card";
 import {
   FaHtml5,
@@ -21,6 +23,7 @@ import {
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const skills = [
   { name: "HTML", icon: FaHtml5 },
@@ -51,16 +54,29 @@ const SkillsSection = () => {
           Skills & Technologies
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-          {skills.map((skill) => (
-            <Card
-              key={skill.name}
-              className="hover:shadow-md transition-shadow"
+          {skills.map((skill, index) => (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
             >
-              <CardContent className="flex flex-col items-center justify-center p-4 h-full">
-                <skill.icon className="w-8 h-8 mb-2 text-primary" />
-                <span className="text-sm text-center">{skill.name}</span>
-              </CardContent>
-            </Card>
+              <Card
+                key={skill.name}
+                className={`hover:shadow-md transition-shadow ${
+                  ["React/React Native", "Next.js", "TypeScript"].includes(
+                    skill.name,
+                  )
+                    ? "border-primary"
+                    : ""
+                }`}
+              >
+                <CardContent className="flex flex-col items-center justify-center p-4 h-full">
+                  <skill.icon className="w-8 h-8 mb-2 text-primary" />
+                  <span className="text-sm text-center">{skill.name}</span>
+                </CardContent>
+              </Card>
+            </motion.div>
           ))}
         </div>
       </div>
