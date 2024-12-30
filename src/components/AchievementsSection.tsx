@@ -7,9 +7,15 @@ const achievements = [
       "Won 1st runner up in the Odyssey Festival game development hackathon with a team of 4.",
   },
   {
-    title: "3rd Place in Engineering IED Competition",
+    title:
+      "3rd Place in the Software Engineering in Engineering IED Competition",
     description:
       "Made a collaborative project management tool using React Native and won 3rd place in the competition.",
+  },
+  {
+    title: "Google Solution Challenge Semi-Finalist",
+    description:
+      "Made a app using python to help those wtih disabilities to use the web more easily and won 4th place in the semi-finals.",
   },
   {
     title: "Dean's List",

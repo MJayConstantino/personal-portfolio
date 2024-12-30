@@ -7,19 +7,19 @@ const Footer = () => {
         </p>
         <div className="mt-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/MJayConstantino"
             className="text-muted-foreground hover:text-primary mx-2"
           >
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/michael-constantino-2751b4313/"
             className="text-muted-foreground hover:text-primary mx-2"
           >
             LinkedIn
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:mjconstantino12345@gmail.com"
             className="text-muted-foreground hover:text-primary mx-2"
           >
             Email

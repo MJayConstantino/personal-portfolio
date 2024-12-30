@@ -10,8 +10,8 @@ const projects = {
       id: 1,
       title: "NoteTube",
       description: "An AI-Powered Learning Web App",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
+      image: "/projects/webdev/notetube.png",
+      githubUrl: "https://github.com/BB6-SE/se-2144-final-project",
       languages: [
         "PostgreSQl",
         "Express",
@@ -21,15 +21,15 @@ const projects = {
         "Vite",
       ],
     },
-    {
-      id: 2,
-      title: "Calculator",
-      description:
-        "A Vite Project that is a simple calculator with basic operations",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
-      languages: ["TypeScript", "Vite"],
-    },
+    // {
+    //   id: 2,
+    //   title: "Calculator",
+    //   description:
+    //     "A Vite Project that is a simple calculator with basic operations",
+    //   image: "/placeholder.svg?height=200&width=300",
+    //   githubUrl: "https://github.com/MJayConstantino",
+    //   languages: ["TypeScript", "Vite"],
+    // },
   ],
   gameDev: [
     {
@@ -37,8 +37,9 @@ const projects = {
       title: "Mix n Mash",
       description:
         "A 2D Brawler Platformer game with inspiration from Pokemon and Smash Bros",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
+      image: "/projects/gamedev/mixnmash.png",
+      githubUrl:
+        "https://github.com/FrancyAmada/Mix-and-Mash-Odyssey-Fest-2024",
       languages: ["Gdscript", "Godot"],
     },
     {
@@ -46,16 +47,16 @@ const projects = {
       title: "Food Vendor Simulator",
       description:
         "A 2D drag and drop game where you simulate the life of a streetfood vendor",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
+      image: "/projects/gamedev/food-vendor-simulator.png",
+      githubUrl: "https://github.com/FrancyAmada/Streetfood-Vendor-Simulator",
       languages: ["Gdscript", "Godot"],
     },
     {
       id: 5,
       title: "SE Knightmares",
       description: "A topdown 2D shooter game",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
+      image: "/projects/gamedev/se-knightmares.png",
+      githubUrl: "https://github.com/MJayConstantino/SEKnightmares",
       languages: ["C#", "Unity"],
     },
   ],
@@ -64,19 +65,19 @@ const projects = {
       id: 6,
       title: "SyncUp",
       description: "A React Native app for collaborative",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
+      image: "/projects/mobiledev/syncup.png",
+      githubUrl: "https://github.com/MJayConstantino/Sync_Up",
       languages: ["React Native", "JavaScript", "Firebase"],
     },
-    {
-      id: 7,
-      title: "QuikEats",
-      description:
-        "An mobile app using that provides food itineraries for locations",
-      image: "/placeholder.svg?height=200&width=300",
-      githubUrl: "https://github.com/MJayConstantino",
-      languages: ["React Native", "Typescript"],
-    },
+    // {
+    //   id: 7,
+    //   title: "QuikEats",
+    //   description:
+    //     "An mobile app using that provides food itineraries for locations",
+    //   image: "/placeholder.svg?height=200&width=300",
+    //   githubUrl: "https://github.com/MJayConstantino",
+    //   languages: ["React Native", "Typescript"],
+    // },
   ],
 };
 

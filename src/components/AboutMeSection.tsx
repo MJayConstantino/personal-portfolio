@@ -28,7 +28,7 @@ const AboutMeSection = () => {
                 <CardContent className="flex flex-col md:flex-row items-center p-6">
                   <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-6">
                     <Image
-                      src="/placeholder.svg"
+                      src="/mypic.jpg"
                       alt="Michael Constantino"
                       layout="fill"
                       objectFit="cover"

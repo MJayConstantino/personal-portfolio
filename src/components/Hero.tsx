@@ -6,16 +6,6 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <section className="relative bg-background min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/placeholder.svg"
-          alt="Background"
-          layout="fill"
-          objectFit="cover"
-          className="opacity-20"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-background" />
-      </div>
       <div className="container mx-auto px-4 z-10">
         <div className="flex justify-start space-x-4 mb-8">
           <Link
@@ -39,8 +29,8 @@ const Hero = () => {
             </Button>
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-10 md:mb-0">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between">
+          <div className="md:w-1/2 mt-10 md:mt-0">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
               Bringing Ideas to Life Through Code
             </h1>
@@ -55,14 +45,15 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-          <div className="md:w-1/2 flex justify-center">
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
+          <div className="md:w-1/2 flex justify-center md:justify-end">
+            <div className="relative w-full h-[300px] md:h-[500px] max-w-[300px] md:max-w-[500px]">
               <Image
-                src="/placeholder.svg"
+                src="/mypic.jpg"
                 alt="Michael Constantino"
                 layout="fill"
                 objectFit="cover"
-                className="rounded-full border-4 border-primary shadow-lg"
+                className="rounded-lg"
+                priority
               />
             </div>
           </div>
