@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "react-hot-toast";
+import { toast } from "@/hooks/use-toast";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactMeSection = () => {
@@ -45,8 +45,8 @@ const ContactMeSection = () => {
           >
             <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
             <p className="mb-4 text-muted-foreground">
-              I'd love to hear from you! Whether you have a question about my
-              work, want to discuss a potential project, or just want to say
+              I would love to hear from you! Whether you have a question about
+              my work, want to discuss a potential project, or just want to say
               hello, feel free to reach out.
             </p>
             <div className="space-y-2">
