@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { toast } from "@/hooks/use-toast";
+import { toast } from "react-hot-toast";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 
 const ContactMeSection = () => {
@@ -15,12 +15,8 @@ const ContactMeSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the form data to a server
     console.log("Form submitted:", { name, email, message });
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
-    });
+    toast.success("Thank you for your message. I'll get back to you soon!");
     setName("");
     setEmail("");
     setMessage("");

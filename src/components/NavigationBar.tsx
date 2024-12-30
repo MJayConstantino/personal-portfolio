@@ -37,7 +37,7 @@ export function NavigationBar() {
               "Experience",
               "Projects",
               "Achievements",
-              "Contact Me",
+              "Contact",
             ].map((item) => (
               <Link
                 key={item}
