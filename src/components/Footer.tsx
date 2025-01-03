@@ -3,7 +3,7 @@ const Footer = () => {
     <footer className="bg-muted py-8">
       <div className="container mx-auto px-4 text-center">
         <p className="text-muted-foreground">
-          &copy; 2025 Michael Constantino's Personal Portfolio. All rights
+          &copy; 2025 Michael Constantino&apos;s Personal Portfolio. All rights
           reserved.
         </p>
         <div className="mt-4">
