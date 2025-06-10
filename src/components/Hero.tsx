@@ -46,20 +46,8 @@ const Hero = () => {
               <span className="block">Hello, I am</span>
               <span className="block h-[1.2em]">Michael Constantino</span>
             </h1>
-            <p className="text-2xl mb-6 text-muted-foreground">
-              <ReactTyped
-                strings={[
-                  "Software Engineer",
-                  "Full Stack Developer",
-                  "Web Developer",
-                  "Mobile Developer",
-                  "Game Developer",
-                ]}
-                typeSpeed={80}
-                backSpeed={100}
-                loop
-                className="font-semibold text-primary"
-              />
+            <p className="text-2xl font-semibold mb-6 text-muted-foreground">
+              Full Stack Developer
             </p>
             <p className="text-xl mb-10 text-muted-foreground leading-relaxed">
               A passionate software engineer specializing in building
@@ -71,7 +59,7 @@ const Hero = () => {
             </p>
             <div className="space-x-4">
               <Button size="lg" asChild>
-                <Link href="/MichaelConstantino-CV.pdf" download>
+                <Link href="/CV-Constantino.pdf" download>
                   Download CV
                 </Link>
               </Button>

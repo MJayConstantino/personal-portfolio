@@ -15,7 +15,7 @@ const achievements = [
   {
     title: "Google Solution Challenge Semi-Finalist",
     description:
-      "Made a app using python to help those wtih disabilities to use the web more easily and won 4th place in the semi-finals.",
+      "Made a app using python to help those wtih disabilities to use the web more easily and won 3rd place in our cluster in the semi-finals.",
   },
   {
     title: "Dean's List",
