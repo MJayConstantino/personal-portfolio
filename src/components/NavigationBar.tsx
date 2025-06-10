@@ -31,22 +31,17 @@ export function NavigationBar() {
             MC
           </Link>
           <div className="hidden md:flex items-center space-x-6">
-            {[
-              "Home",
-              "About",
-              "Experience",
-              "Projects",
-              "Achievements",
-              "Contact",
-            ].map((item) => (
-              <Link
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-foreground hover:text-primary transition-colors"
-              >
-                {item}
-              </Link>
-            ))}
+            {["Home", "About", "Experience", "Projects", "Achievements"].map(
+              (item) => (
+                <Link
+                  key={item}
+                  href={`#${item.toLowerCase()}`}
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  {item}
+                </Link>
+              ),
+            )}
             <Button
               variant="ghost"
               size="icon"

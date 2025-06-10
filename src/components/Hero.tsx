@@ -44,26 +44,36 @@ const Hero = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-10 text-foreground leading-tight">
               <span className="block">Hello, I am</span>
-              <span className="block h-[1.2em]">
-                <ReactTyped
-                  strings={["Michael Constantino"]}
-                  typeSpeed={80}
-                  backSpeed={50}
-                  loop
-                />
-              </span>
+              <span className="block h-[1.2em]">Michael Constantino</span>
             </h1>
-            <p className="text-xl mb-6 text-muted-foreground">
-              Software Engineer | Crypto Enthusiast
+            <p className="text-2xl mb-6 text-muted-foreground">
+              <ReactTyped
+                strings={[
+                  "Software Engineer",
+                  "Full Stack Developer",
+                  "Web Developer",
+                  "Mobile Developer",
+                  "Game Developer",
+                ]}
+                typeSpeed={80}
+                backSpeed={100}
+                loop
+                className="font-semibold text-primary"
+              />
             </p>
-            <p className="text-xl mb-10 text-muted-foreground">
-              I craft amazing solutions through elegant web and mobile
-              experiences.
+            <p className="text-xl mb-10 text-muted-foreground leading-relaxed">
+              A passionate software engineer specializing in building
+              exceptional digital experiences. With expertise in full-stack
+              development, I craft scalable solutions across web, mobile, and
+              game platforms. Currently focused on creating innovative
+              applications that solve real-world problems while delivering
+              intuitive user experiences.
             </p>
             <div className="space-x-4">
-              <Button size="lg">Download CV</Button>
-              <Button variant="outline" size="lg">
-                Contact Me
+              <Button size="lg" asChild>
+                <Link href="/MichaelConstantino-CV.pdf" download>
+                  Download CV
+                </Link>
               </Button>
             </div>
           </div>

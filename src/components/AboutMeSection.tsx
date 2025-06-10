@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
@@ -12,78 +11,77 @@ const AboutMeSection = () => {
         <h2 className="text-3xl font-bold mb-8 text-center text-foreground">
           About Me
         </h2>
-        <Tabs defaultValue="about" className="w-full max-w-7xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="about">About</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-          </TabsList>
-          <TabsContent value="about">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="flex flex-col md:flex-row items-center p-6">
-                  <div className="w-64 h-64 md:w-80 md:h-80 relative mb-6 md:mb-0 md:mr-6">
-                    <Image
-                      src="/mypic.jpg"
-                      alt="Michael Constantino"
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-lg"
-                    />
-                  </div>
-                  <div className="flex-1">
-                    <p className="text-lg text-muted-foreground">
-                      I am a software engineering student at Central Philippine
-                      University with a passion for creating intuitive and
-                      efficient web applications. My journey in coding began in
-                      Grade 6 with Arduino, and since then, I have expanded my
-                      skills to include full-stack development. I love turning
-                      ideas into reality and continuously learning new
-                      technologies.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </TabsContent>
-          <TabsContent value="education">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">
-                    Central Philippine University
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    Bachelor of Science in Software Engineering
-                  </p>
-                  <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
-                    <li>
-                      Currently in 2nd year, focusing on TypeScript and advanced
-                      project development
-                    </li>
-                    <li>
-                      1st year: Learned Python extensively and developed a game
-                      using C# and Unity
-                    </li>
-                    <li>
-                      Created a collaborative project management tool using
-                      React Native
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </TabsContent>
-        </Tabs>
+        <div className="max-w-4xl mx-auto space-y-6">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <Card className="bg-primary/10">
+              <CardContent className="p-6">
+                <p className="text-lg text-foreground">
+                  👋 Hey there! I'm Michael, a second-year Software Engineering
+                  student at Central Philippine University.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <Card>
+              <CardContent className="p-6">
+                <p className="text-lg text-muted-foreground">
+                  💻 My coding journey started back in Grade 6 with Arduino, and
+                  since then, I've grown into full-stack development. I love
+                  building applications that solve real problems and create
+                  amazing user experiences.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <Card className="bg-primary/10">
+              <CardContent className="p-6">
+                <p className="text-lg text-foreground">
+                  🎓 Currently mastering TypeScript and advanced web
+                  development, while building multiple full-stack applications.
+                  I've already completed projects with Next.js, React, and
+                  various other modern technologies.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Card>
+              <CardContent className="p-6">
+                <p className="text-lg text-muted-foreground">
+                  🚀 My first year gave me strong foundations in Python and game
+                  development with C# and Unity. Now, I'm expanding my horizons
+                  and working on exciting projects that combine both creativity
+                  and technical excellence.
+                </p>
+              </CardContent>
+            </Card>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

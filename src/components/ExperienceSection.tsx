@@ -9,7 +9,7 @@ const experiences = [
     year: "2024-present",
     title: "2nd Year Software Engineering Student",
     description:
-      "Focusing on TypeScript and advanced project development, project management and functional programming",
+      "Focusing on TypeScript and advanced project development, project management and functional programming and worked with real world clients",
   },
   {
     id: 2,

@@ -21,15 +21,16 @@ const projects = {
         "Vite",
       ],
     },
-    // {
-    //   id: 2,
-    //   title: "Calculator",
-    //   description:
-    //     "A Vite Project that is a simple calculator with basic operations",
-    //   image: "/placeholder.svg?height=200&width=300",
-    //   githubUrl: "https://github.com/MJayConstantino",
-    //   languages: ["TypeScript", "Vite"],
-    // },
+    {
+      id: 2,
+      title: "JurisEase",
+      description:
+        "A powerful, modern, and easy-to-use Legal Case Tracking & Management System built for law firms",
+      image: "/projects/webdev/jurisease.png",
+      githubUrl:
+        "https://github.com/MJayConstantino/JurisEase-Legal-Management-System",
+      languages: ["TypeScript", "Supabase", "Next.js", "Tailwind CSS", "React"],
+    },
   ],
   gameDev: [
     {
@@ -64,19 +65,29 @@ const projects = {
     {
       id: 6,
       title: "SyncUp",
-      description: "A React Native app for collaborative",
+      description:
+        "A React Native app for scanning the school's RF and transforming it into a schedule",
       image: "/projects/mobiledev/syncup.png",
       githubUrl: "https://github.com/MJayConstantino/Sync_Up",
       languages: ["React Native", "JavaScript", "Firebase"],
     },
-    // {
+    {
+      id: 7,
+      title: "Project Alert",
+      description:
+        "An mobile app app for a school capstone project that is used for helping students and teachers contact authorities in case of emergencies",
+      image: "/projects/mobiledev/project-alert.png",
+      githubUrl: "https://github.com/FrancyAmada/Project-ALERT",
+      languages: ["React Native", "Typescript"],
+    },
+    //     {
     //   id: 7,
-    //   title: "QuikEats",
+    //   title: "Prelude App",
     //   description:
     //     "An mobile app using that provides food itineraries for locations",
     //   image: "/placeholder.svg?height=200&width=300",
     //   githubUrl: "https://github.com/MJayConstantino",
-    //   languages: ["React Native", "Typescript"],
+    //   languages: ["React Native", "Typescript", "Nativewind", "Expo", "Intercom Chat", "Firebase"],
     // },
   ],
 };

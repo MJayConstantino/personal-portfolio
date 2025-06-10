@@ -5,7 +5,6 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import AchievementsSection from "@/components/AchievementsSection";
 //import TestimonialsSection from "@/components/TestimonialsSection";
-import ContactMeSection from "@/components/ContactMeSection";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
         <ProjectsSection />
         <AchievementsSection />
         {/* <TestimonialsSection /> */}
-        <ContactMeSection />
       </main>
     </>
   );
