@@ -5,13 +5,11 @@ import AchievementsSection from "@/components/AchievementsSection";
 
 export default function Home() {
   return (
-    <>
-      <main className="pt-8">
-        <Hero />
-        <AboutMeSection />
-        <ProjectsSection />
-        <AchievementsSection />
-      </main>
-    </>
+    <main>
+      <Hero />
+      <AboutMeSection />
+      <ProjectsSection />
+      <AchievementsSection />
+    </main>
   );
 }
