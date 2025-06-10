@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
-import { ReactTyped } from "react-typed";
 
 const Hero = () => {
   return (
